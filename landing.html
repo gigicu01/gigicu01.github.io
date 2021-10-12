@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="img/arvr-logo.jpg">
+</head>
+
+<body id="landing_body">
+
+    <!-- navbar-->
+    <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top double-nav first-navbar">
+        <a class="navbar-brand" href="index.html">
+            <!-- navbar home logo  -->
+            <img src="img/arvr-logo.jpg" alt="logo_home">
+            
+            Shop Name
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse collapse_landing">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item"><a href="#hero_landing" class="nav-link">Hero</a></li>
+                <li class="nav-item"><a href="#review_quest2" class="nav-link">Video Review</a></li>
+                <li class="nav-item"><a href="#socialize" class="nav-link">Socialize</a></li>
+				<li class="nav-item"><a href="#3dsound" class="nav-link">3DSound</a></li>
+				<li class="nav-item"><a href="#specifications" class="nav-link">Specifications</a></li>				
+            </ul>
+        </div>
+    </nav>
+	
+    <nav class="navbar second-navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top double-nav">
+	<h1>Oculus Quest 2</h1>
+	<div class="ml-auto">
+		<button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="$300(tax included)">Price</button>
+		<button type="button" class="btn btn-secondary mt-1 ml-auto" data-toggle="modal" data-target="#checkout_modal">Buy Now</button>
+	</div>
+	
+    </nav>	
+
+<section id="hero_landing">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center hero_text_bg">
+					<h1><span>The Oculus 2 Headset</span></h1>
+					<p class="hero_subheading" style="color:white;"><b>The newest headset from Oculus is the best budget option on the market right now</b></p>
+				</div>    
+            </div>
+        </div>
+</section>
+
+<section id="review_quest2">
+        <div class="container">
+            <div class="row">
+				<div class="col text-center">
+					<p class="white_title"><b>Video Review of the Quest 2 Headset</b></p>
+					<div class="embed-responsive embed-responsive-21by9">			
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wpkKU7RJyLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+</section>
+
+<section id="socialize">
+        <div class="container">
+            <div class="row">
+                <!-- column 1 -->
+                <div class="col-lg-8" id="image_socialize">
+					<img class="rounder img-fluid" src="img/socialize.jpg" alt = "Socialize">
+				</div>
+
+                <!-- column 2 -->
+                <div class="col-lg-4" id="text_socialize">
+					<h1> GET TOGETHER WITH FACEBOOK </h1>
+					<p>Your Quest 2 is connected to your Facebook account so you can meet up with friends to explore worlds, sit front row at live events and so much more.</p>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section id="3dsound">
+        <div class="container">
+            <div class="row">
+                <!-- column 1 -->
+                <div class="col-lg-4" id="text_3dsound">
+					<h1> 3D CINEMATIC SOUND </h1>
+					<p>Stay focused on the fight or lost in meditation with built-in speakers that deliver cinematic 3D positional audio.</p>
+				</div>
+
+                <!-- column 2 -->
+                <div class="col-lg-8" id="image_3dsound">
+					<img class="rounder img-fluid" src="img/cinematic_sound.jpg" alt = "Socialize">
+				</div>				
+			
+			</div>
+		</div>
+</section>
+
+<section id="specifications">
+	<div class="text-center">
+		<h1 class="white_title"> Specifications </h1>
+	</div>
+	<table class="table table-striped table-dark">
+	<tr>
+		<th scope="col">Best choice for</th>	  
+		<td><p>Customers with low budget but high expectations</p>
+			<p>Your first VR product</p>
+		</td>
+	  </tr>	
+	  <tr>
+		<th scope="col">Product Dimensions</th>
+		<td>191.5 mm x 102 mm x 142.5 mm (strap folded in), 191.5 mm x102 mm x 295.5 mm (strap fully opened up)</td>
+	  </tr>
+	  <tr>
+		<th scope="col">Product Weight</th>
+		<td>503 grams</td>
+	  </tr>
+	  
+	  <tr>
+		<th scope="col">Tracking</th>
+		<td>6 degrees of freedom head and hand tracking through integrated Oculus Insight technology.</td>		
+	  </tr>
+	  <tr>
+		<th scope="col">Storage</th>
+		<td>64GB</td>	
+	  </tr>	  
+	  <tr>
+		<th scope="col">Display Resolution</th>	  
+		<td>​1832×1920 per eye</td>
+	  </tr>
+	  <tr>
+		<th scope="col">Display Refresh Rate</th>	  
+		<td>90 Hz</td>
+	  </tr>	  
+	  <tr>
+		<th scope="col">Battery Life</th>	  
+		<td>You can expect between 2-3 hours based on the kind of content you’re using on Quest 2; closer to 2 hours if you’re playing games and closer to 3 hours if you’re watching media. At any point, you can check the battery status of your headset in the Oculus App settings or in VR via Oculus Home.</td>
+	  </tr>
+	  <tr>
+		<th scope="col">Charge Time</th>	  
+		<td>With the provided USB-C power adapter, Quest 2 will charge to a full battery in about 2.5 hours.</td>
+	  </tr>	  
+	</table>
+</section>
+
+    <!-- Buy now form modal -->
+    <div class="modal fade" id="checkout_modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Checkout Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" id="checkout_form" action="response.html">
+
+                        <div class="md-form mb-5">
+                            <label for="first_name">First Name</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First name" />
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last name" />
+                        </div>
+						
+                        <div class="md-form mb-5">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Ex:customer@gmail.com" />
+                        </div>						
+
+
+                        <div class="md-form mb-5">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="(800)123-4567">
+                        </div>
+						
+                        <div class="md-form mb-5">
+                            <label for="alternative_phone">Alternative Phone Number</label>
+                            <input type="tel" class="form-control" id="alternative_phone" name="alternative_phone" placeholder="(800)123-4567">
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <label for="card_number">Card Number</label>
+                            <input type="text" class="form-control" id="card_number" name="card_number" placeholder="Card Number">
+                        </div>
+						
+                        <div class="md-form mb-5">
+                            <label for="card_name">Full name on the card</label>
+                            <input type="text" class="form-control" id="card_name" name="card_name" placeholder="First Middle Last" />
+                        </div>						
+
+                        <div class="md-form mb-5">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" class="form-control" id="cvv" name="cvv" placeholder="123" />
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <label for="card_address">Full address of cardholder</label>
+                            <input type="text" class="form-control" id="card_address" name="card_address" placeholder="Full Adress" />
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <label for="card_name">Shipping Address</label>
+                            <input type="text" class="form-control" id="ship_address" name="ship_address" placeholder="Shipping address" />
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <input type="hidden" class="form-control" id="product_name" name="product_name" value="Oculus Quest 2" />
+                        </div>								
+
+                        <div class="md-form mb-5">
+                            <label for="ship_options">Shipping Options</label>
+                            <select class="form-control" id="ship_options" name="ship_options" >
+                                <option>2 weeks (free)</option>
+                                <option>1 week ($10)</option>
+                                <option>3 days ($20)</option>
+                            </select>
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <label for="gift">Do you want gift wrapping (free)?
+                                <input type="checkbox" class="form-checkbox" id="gift" name="gift">
+                            </label>
+                        </div>
+                        
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" id="btnSaveIt">Process My Request</button>
+                            <button type="button" class="btn btn-default" id="btnCloseIt" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+										
+
+
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+
+
+   
+    <script>
+        //Enable tooltips everywhere in the page
+        $(function() {		
+            $("#checkout_form").validate({
+                rules: 
+                {	
+                    //add your validation rules
+                    first_name: 	{
+									required: true
+									},
+					last_name:		{
+									required: true
+									},
+                    phone:			{
+									required: true,
+									digits: true,
+									minlength: 10,
+									maxlength: 10
+									},
+                    alternative_phone:		
+									{
+									required: true,
+									digits: true,
+									minlength: 10,
+									maxlength: 10
+									},
+					card_number: 	{
+									required: true,
+									digits: true,
+									minlength: 16,
+									maxlength: 16
+									},
+					card_name:		{
+									required: true
+									},
+					card_address:	{
+									required: true
+									},
+					cvv:			{
+									required: true,
+									digits: true,
+									minlength: 3,
+									maxlength: 3									
+									},
+					ship_address:	{
+									required: true
+									},									
+								
+                    
+                    
+                } //end of rules 
+                ,
+                messages: 
+                {
+                    //add your custom messages
+                    phone: {
+							minlength: "Phone number must be 10 digits",
+							maxlength: "Phone number must be 10 digits"
+						 },
+                    alternative_phone: {
+							minlength: "Phone number must be 10 digits",
+							maxlength: "Phone number must be 10 digits"
+						 },
+                    card_number: {
+							minlength: "Card number must be 16 digits",
+							maxlength: "Card number must be 16 digits"
+						 },						 
+                    cvv: {
+							minlength: "CVV number must be 3 digits",
+							maxlength: "CVV number must be 3 digits"
+						 }                    
+                    
+                    
+                    
+                } //end of messages
+            }); //end of validate function
+            
+            
+
+        }); //end of page load function		
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Categories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="img/arvr-logo.jpg">
+</head>
+
+<body>
+
+    <!-- navbars-->
+    <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <!-- navbar home logo  -->
+            <img src="img/arvr-logo.jpg" alt="logo_home">
+            
+            Shop Name
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				<li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+			<form class="form-inline ml-4">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search for a category" aria-label="Search" id="searchbox">
+			</form>
+        </div>
+    </nav>
+	
+	
+
+    <!-- Search functionality -->
+    <section>
+        <div class="container">
+
+
+            <!-- product cards row -->
+            <div class="row justify-content-center">
+
+                <div class="card col-sm-5 col-md-3 m-2">
+                    <img class="card-img-top" src="img/vrlogo.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Virtual Reality</h4>
+                    </div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Headsets</li>
+						<li class="list-group-item">Treadmills</li>
+						<li class="list-group-item">Drones</li>
+						<li class="list-group-item">Haptic Gloves</li>
+						<li class="list-group-item">Accessories</li>
+					</ul>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 m-2">
+                    <img class="card-img-top" src="img/arlogo.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Augmented Reality</h4>
+                    </div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Goggles</li>
+						<li class="list-group-item">Glasses</li>
+						<li class="list-group-item">Drones</li>
+						<li class="list-group-item">Projectors</li>
+						<li class="list-group-item">Accessories</li>
+					</ul>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 m-2" id="gamescard">
+                    <img class="card-img-bottom" src="img/game_logo.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center mobile_gamescategory">Games</h4>
+                    </div>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 m-2">
+                    <img class="card-img-top" src="img/softwarelogo.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Software</h4>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+   
+    <script>
+        //Filters to compare categories and sub-categories with searchbox value
+        $(document).ready(function() {
+            $("#searchbox").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $('div.card').filter(function() {
+                    $(this).toggle($(this).find('h4').text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+		
+        $(document).ready(function() {
+            $("#searchbox").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $('div.card').filter(function() {
+                    $(this).toggle($(this).find('li').text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });		
+    </script>
+
+
+</body>
+
+</html>

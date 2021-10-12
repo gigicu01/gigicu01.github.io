@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Response Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="img/arvr-logo.jpg">
+
+</head>
+
+<body>
+
+    <!-- navbar-->
+    <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <!-- navbar home logo  -->
+            <img src="img/arvr-logo.jpg" alt="logo_home">
+            
+            Shop Name
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				<li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>				
+            </ul>
+        </div>
+    </nav>
+	
+		<p style="margin-top:100px;"> Thank you Mr/Mrs. <span id="firstspan"></span> <span id="lastspan"></span> for buying <span id="product_name_span"></span>.<p>
+
+	
+		<table class="table">
+	  <tr>
+		<th scope="col">Product</th>
+		<td><img id="product_img" height="100px"></td>
+	  </tr>
+	  <tr>
+		<th scope="col">Shipping Address</th>
+		<td><span id="address_span"></span></td>
+	  </tr>
+	  
+	  <tr>
+		<th scope="col" rowspan="2">Phone Number</th>
+		<td><span id="phone_span"></span></td>		
+	  </tr>
+	  <tr>
+	  <td><span id="alternative_phone_span"></span></td>	
+	  </tr>	  
+	  <tr>
+		<th scope="col">Gift Wrapping(Yes/No)</th>	  
+		<td><p id="gift_p"></p></td>
+	  </tr>
+	  <tr>
+		<th scope="col">Shipping Option</th>	  
+		<td><span id="ship_options_span"></span></td>
+	  </tr>	  
+	  
+	</table>
+	
+	
+
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+    <script>
+        
+        window.onload = function() {
+            var params = new window.URLSearchParams(window.location.search);
+            
+            //assign query string parameters pet, first_name, volunteer, and phone to local variables with same name
+            var first_name = params.get('first_name');
+			var last_name = params.get('last_name');
+			var gift = params.get('gift');
+			var phone = params.get('phone');
+			var ship_address = params.get('ship_address');
+			var product_name = params.get('product_name');
+			var alternative_phone = params.get('alternative_phone');
+            var ship_options = params.get('ship_options');			
+			
+            
+            //change the pet span text to match the pet query string parameter value
+            $("#firstspan").text(`${first_name}`);
+			$("#lastspan").text(`${last_name}`);
+            
+            //change the phone span text to match the phone query string parameter value
+            $("#product_name_span").text(`${product_name}`);
+            $("#address_span").text(`${ship_address}`);
+            $("#phone_span").text(`${phone}`);
+            $("#alternative_phone_span").text(`${alternative_phone}`);
+			$("#ship_options_span").text(`${ship_options}`);
+			
+            
+            //test if volunteer checkbox is checked and set last paragraph message to include first name 
+            if(gift=="on")
+			{
+				$("#gift_p").text(`Yes`);
+			}
+			else
+			{
+				$("#gift_p").text(`No`);
+			}
+            
+			if(product_name=="Oculus Quest 2")
+			{
+				$("#product_img").attr("src", "img/quest2.png"); 
+			}
+            
+
+        };
+    </script>
+
+</body></html>
+
+

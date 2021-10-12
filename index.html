@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shop Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+	
+	<link rel="icon" href="img/arvr-logo.jpg">
+
+</head>
+
+<body>
+
+    <!-- navbar-->
+    <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <!-- navbar home logo  -->
+            <img src="img/arvr-logo.jpg" alt="logo_home">
+            
+            Shop Name
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				<li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>				
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section-->
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+					<h1><span>Your First Stop for VR/AR Products</span></h1>
+					<p class="hero_subheading"><b>Be a part of a new reality!</b></p>
+					<a class="btn btn-primary btn-lg" href="products.html">All product categories</a>
+				</div>    
+            </div>
+        </div>
+    </section>
+	
+
+
+	<!-- Main Products Carousel-->
+	<section id="main_products" class="bg-light">
+	<div>
+        <div id="carousel_mainproducts" class="carousel slide" data-ride="carousel" data-interval="5000">
+		
+		    <ol class="carousel-indicators">
+            <li data-target="#carousel_mainproducts" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel_mainproducts" data-slide-to="1"></li>
+            <li data-target="#carousel_mainproducts" data-slide-to="2"></li>
+			</ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="landing.html"><img class="d-block w-100" src="img/quest2_2.png" alt="First slide"></a>
+                    <div class="carousel-caption">
+                        <h5>The Oculus Quest 2 Headset</h5>
+                        <p>The newest headset from Oculus is the best budget option on the market right now</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/valve_index3.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h5>Valve Index</h5>
+                        <p>One of the best headsets on the market, the quality of movement tracking and the contrller's design is worth every penny. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/treadmill.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h5>Virtuix Omni VR Treadmills</h5>
+                        <p>Raise the Virtual Reality experience to a new level by translating movement in the real world into the virtual world.</p>
+                    </div>
+                </div>
+
+                <!-- previous and next controls -->
+                <a class="carousel-control-prev" href="#carousel_mainproducts" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel_mainproducts" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+        </div>	
+	</div>	
+	
+	
+	</section>
+	
+
+    <!-- Utility+info section-->
+    <section>
+        <div class="container-fluid">
+            <div class="row" id="row_home">
+                <!-- column 1 -->
+                <div class="col-lg-5" id="vr_utility">
+					<h2>What can be done in VR</h2>
+					<ul>
+						<li>Watching movies, 360 degree videos, and live events.</li>
+						<li>Participating in extreme—and not so extreme, sports.</li>
+						<li>Playing immersive video games.</li>
+						<li>Virtual travel and exploring.</li>
+						<li>Work related activities in VR (such as a virtual Office).</li>
+					</ul>
+				</div>
+                <!-- column 2 -->
+                <div class="col-lg-5" id="b2b_info">
+					<h2>Do you represent a business?</h2>
+					<p>Contact us if any of the following applies to you: </p>
+					<ul>
+						<li>You want to buy in bulk</li>
+						<li>You want to integrate VR/AR technology in your business</li>
+						<li>You don't know what kind of products fir your business</li>
+					</ul>
+					<a class="btn btn-primary btn-lg" href="contact.html" id="home_contact">Contact Us</a>
+				</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Games-->
+	<section id="games" class="bg-light">
+	<div>
+        <div id="carousel_games" class="carousel slide" data-ride="carousel" data-interval="5000">
+		
+		    <ol class="carousel-indicators">
+            <li data-target="#carousel_games" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel_games" data-slide-to="1"></li>
+			</ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/star-wars-tales.png" alt="First slide">
+                    <div class="carousel-caption">
+                        <h5>Star Wars Tales From The Galaxy's Edge</h5>
+                        <p>Star Wars fan? Then what is better than being a part of you favourite universe?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/beatsaber.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h5>Beat Saber</h5>
+                        <p>Train your Jedi skills in one of the top games favoured by users by slaying boxes on the beat.</p>
+                    </div>
+                </div>
+
+                <!-- previous and next controls -->
+                <a class="carousel-control-prev" href="#carousel_games" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel_games" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+        </div>	
+	</div>	
+	
+	
+	</section>
+
+    <section class="footer">
+        <div class="container text-center">
+            <p>Copyright &copy;  Shop Name</p>
+            <p>Contact: 800-242-VRAR or customerservice@shopname.com</p>
+        </div>
+    </section>
+    
+    
+    
+   
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+
+
+</body></html>
